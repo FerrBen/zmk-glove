@@ -90,7 +90,7 @@
 &kp EXCL      &kp LESS_THAN     &kp MINUS             &kp EQUAL              &kp GREATER_THAN   &kp PLUS     &kp N0    &kp DOLLAR &kp LS(G) &gg
 &trans        &kp AMPS          &kp PIPE              &kp COLON              &kp C_VOL_DN       &kp LS(LC(RIGHT_BRACKET)) &kp LS(LC(LEFT_BRACKET))
 &kp ASTERISK  &kp BACKSLASH     &kp SEMICOLON         &trans                 &trans
-                                                                             &trans
+                                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -130,66 +130,9 @@
 &trans      &kp TAB    &kp Q     &kp W      &kp E   &kp R   &kp T   &trans  &trans  &trans  &trans  &trans
 &kp ESCAPE  &kp CAPS   &kp A     &kp S      &kp D   &kp F   &kp G   &trans  &trans  &trans  &trans  &trans
 &trans      &kp LSHFT  &kp Z     &kp X      &kp C   &kp V   &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans     &trans    &kp SPACE  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans     &trans    &kp SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &to 0       &kp LALT   &kp LGUI  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                                                      &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-    };
-
-        raise {
-            bindings = <
-&kp TILDE     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp QUESTION  &trans          &kp C_BRI_DEC                             &trans                    &trans     &trans          &trans        &trans     &trans  &trans
-&kp SLASH     &kp LEFT_BRACE    &kp GRAVE             &kp SINGLE_QUOTE       &kp RIGHT_BRACE    &kp AT        &trans          &kp K_MUTE                                &trans                    &trans     &kp LC(D)       &kp LC(U)     &trans     &trans  &trans
-&kp HASH      &kp CARET         &kp DOUBLE_QUOTES     &kp UNDER              &kp DOLLAR         &kp PERCENT   &trans          &kp C_BRI_UP                              &vim_write                &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&kp EXCL      &kp LESS_THAN     &kp MINUS             &kp EQUAL              &kp GREATER_THAN   &kp PLUS                      &kp C_VOL_UP                              &kp N0                    &kp LS(G)  &gg             &kp DOLLAR    &trans     &trans
-&trans        &kp AMPS          &kp PIPE              &kp COLON                                 &kp C_VOL_DN          &trans  &trans         &kp LS(LC(RIGHT_BRACKET))  &kp LS(LC(LEFT_BRACKET))
-&kp ASTERISK  &kp BACKSLASH     &kp SEMICOLON         &trans                 &trans                                   &trans  &trans         &trans                     &trans                    &trans
-                                                                                                                      &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        lower {
-            bindings = <
-&trans    &kp F1    &kp F2  &kp F3     &kp F4      &kp F5        &kp F6          &kp C_BRI_DN             &trans         &kp F7        &kp F8         &kp F9     &kp F10       &kp F11       &kp F12
-&trans    &kp EXCL  &kp AT  &kp HASH   &kp DOLLAR  &kp PERCENT   &trans          &kp K_MUTE               &trans         &kp CARET     &kp AMPS       &kp ASTRK  &kp LS(LPAR)  &kp LS(RPAR)  &kp BSLH
-&trans    &kp N1    &kp N2  &kp N3     &kp N4      &kp N5        &trans          &kp C_BRI_UP             &trans         &kp MINUS     &kp EQUAL      &kp GRAVE  &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(PIPE)
-&kp LALT  &kp N6    &kp N7  &kp N8     &kp N9      &kp N0                        &kp C_VOLUME_UP          &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(TILDE)  &kp LBKT   &kp RBKT      &trans
-&trans    &trans    &trans  &trans                 &kp C_VOL_DN          &trans  &trans           &trans  &trans
-&trans    &trans    &trans  &mkp LCLK  &trans                            &trans  &trans           &trans  &mkp RCLK      &trans
-                                                                         &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        adjust {
-            bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans            &trans                               &trans                     &trans        &trans          &trans          &trans           &trans  &trans
-&out OUT_USB  &out OUT_BLE  &bootloader   &trans        &trans        &trans        &trans            &trans                               &trans                     &trans        &trans          &mmv MOVE_UP    &trans           &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans        &trans            &trans                               &trans                     &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans                          &trans                               &trans                     &msc SCRL_UP  &msc SCRL_DOWN  &trans          &trans           &trans
-&trans        &trans        &trans        &trans                      &trans                &trans    &mkp LCLK  &kp LS(LC(LEFT_BRACKET))  &kp LS(LC(RIGHT_BRACKET))
-&to 4         &trans        &trans        &trans        &trans                              &mkp MB5  &mkp MCLK  &mkp RCLK                 &trans                     &mkp MB4
-                                                                                            &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        layer_4 {
-            bindings = <
-&trans      &kp N1     &kp N2    &kp N3     &kp N4  &kp N5  &kp N6          &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp TAB    &kp Q     &kp W      &kp E   &kp R   &kp T           &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE  &kp CAPS   &kp A     &kp S      &kp D   &kp F   &kp G           &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp LSHFT  &kp Z     &kp X      &kp C   &kp V                   &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans     &trans    &kp SPACE          &trans          &trans  &trans  &trans  &trans
-&to 0       &kp LALT   &kp LGUI  &trans     &trans                  &trans  &trans  &trans  &trans  &trans
-                                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
