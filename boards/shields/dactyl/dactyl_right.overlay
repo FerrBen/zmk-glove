@@ -16,13 +16,6 @@
         ;
 };
 
-/ {
-    // Direct kscan for the EC11 push button on pin 9
-    kscan_direct: kscan_direct {
-        compatible = "zmk,kscan-gpio-direct";
-        input-gpios = <&pro_micro 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-    };
-};
 
 // Add EC11 push button to the composite kscan
 // Composite outputs (6,7), transform col-offset adds 8 -> RC(6,15)
