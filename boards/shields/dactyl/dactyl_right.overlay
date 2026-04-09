@@ -17,15 +17,7 @@
 };
 
 
-// Add EC11 push button to the composite kscan
-// Composite outputs (6,7), transform col-offset adds 8 -> RC(6,15)
-&kscan_composite {
-    direct {
-        kscan = <&kscan_direct>;
-        row-offset = <6>;
-        col-offset = <7>;
-    };
-};
+
 
 &right_encoder {
     status = "okay";
