@@ -83,8 +83,8 @@
 &kp LEFT_SHIFT   &kp Z                &kp X                 &kp C        &kp V      &kp B      &kp N       &kp M     &kp COMMA &kp DOT  &kp FSLH &kp LALT
 // row 4 (10) — col0 and col11 not in matrix for this row
 &kp SPACE        &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LG(C)    &kp LEFT   &kp LEFT_SHIFT &kp LG(V) &kp BACKSLASH &kp PIPE &trans
-// row 5 (12) — temporary test: L=1-6, R=7-12
-&kp N1           &kp N2               &kp N3                &kp N4       &kp N5     &kp N6     &kp N7        &kp N8            &kp N9            &kp N0        &kp MINUS &kp EQUAL
+// row 5 (12)
+&kp ENTER        &sk LEFT_COMMAND     &kp LEFT_CONTROL      &kp LEFT_ALT &kp ESCAPE &trans     &kp BACKSPACE &kp RIGHT_COMMAND &kp RIGHT_CONTROL &kp RIGHT_ALT &kp TAB &kp K_MUTE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
