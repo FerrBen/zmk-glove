@@ -56,6 +56,28 @@
             bindings = <&kp LC(A) &kp NUMBER_4>;
             label = "TMUX_N4";
         };
+
+        tmux_next: tmux_next_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp N>;
+            label = "TMUX_NEXT_WIN";
+        };
+
+        tmux_prev: tmux_prev_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp P>;
+            label = "TMUX_PREV_WIN";
+        };
+    };
+
+    behaviors {
+        enc_tmux: enc_tmux {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&tmux_next>, <&tmux_prev>;
+        };
     };
 
     keymap {
@@ -81,7 +103,7 @@
 &kp LEFT_SHIFT    &kp BACKSPACE         &kp DELETE             &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB  &kp RIGHT_CONTROL  &kp RIGHT_COMMAND  &kp ENTER      &kp SPACE  &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&enc_tmux>;
         };
 
         layer_5 {
@@ -105,7 +127,7 @@
 &kp ASTERISK  &kp BACKSLASH     &kp SEMICOLON         &trans                 &trans             &trans        &trans         &trans            &trans     &trans                     &trans                    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&enc_tmux>;
         };
 
         lower {
@@ -118,7 +140,7 @@
 &trans    &trans    &trans  &mkp LCLK  &trans        &trans       &trans         &trans        &trans         &mkp RCLK     &trans        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&enc_tmux>;
         };
 
         adjust {
@@ -131,7 +153,7 @@
 &to 5         &trans        &trans        &trans        &trans        &trans        &mkp MB5  &mkp MCLK       &mkp RCLK       &trans                    &mkp MB4                   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&enc_tmux>;
         };
 
         layer_4 {
@@ -144,7 +166,7 @@
 &to 0       &kp LALT   &kp LGUI  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&enc_tmux>;
         };
     };
 };
