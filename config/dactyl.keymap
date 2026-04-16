@@ -145,12 +145,12 @@
 
         adjust {
             bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans    &trans    &trans                    &trans                     &trans
-&out OUT_USB  &out OUT_BLE  &bootloader   &trans        &trans        &trans        &trans  &trans    &trans    &trans                    &trans                     &trans
-&trans        &trans        &trans        &trans        &trans        &trans        &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW              &kp RIGHT                  &trans
-&trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans    &trans    &trans                    &trans                     &trans
-&trans        &trans        &trans        &trans        &trans                              &trans    &trans    &kp LS(LC(LEFT_BRACKET))  &kp LS(LC(RIGHT_BRACKET))  &trans
-&trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans    &trans    &trans                    &trans                     &trans
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp RA(NUMBER_1)  &kp LA(NUMBER_2)    &kp LA(NUMBER_3)     &kp LA(NUMBER_4)  &kp LA(N5)  &trans
+&out OUT_USB  &out OUT_BLE  &bootloader   &trans        &trans        &trans        &trans            &trans              &trans               &trans            &trans      &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &kp LEFT          &kp DOWN            &kp UP_ARROW         &kp RIGHT         &trans      &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &trans            &trans              &trans               &trans            &trans      &trans
+&trans        &trans        &trans        &trans        &trans                                        &kp LG(LEFT_BRACE)  &kp LG(RIGHT_BRACE)  &trans            &trans      &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &trans            &trans              &trans               &trans            &trans      &trans
             >;
 
             sensor-bindings = <&enc_tmux>;
