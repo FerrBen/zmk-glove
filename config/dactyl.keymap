@@ -137,12 +137,12 @@
 
         symbol {
             bindings = <
-&trans  &kp F1         &kp F2         &kp F3            &kp F4             &kp F5    &kp F6         &kp F7       &kp F8                &kp F9                 &kp F10    &kp F11
-&trans  &kp GRAVE      &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &trans    &kp COLON      &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET  &trans
-&trans  &kp TILDE      &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH  &kp QUESTION   &kp EXCL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPS   &kp AT
-&trans  &kp BACKSLASH  &kp SLASH      &kp STAR          &kp SINGLE_QUOTE   &trans    &kp SEMICOLON  &kp DOLLAR   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE   &trans
-&trans  &trans         &trans         &trans            &trans                                      &trans       &trans                &trans                 &trans     &trans
-&trans  &trans         &trans         &trans            &trans             &trans    &trans         &trans       &kp LG(BACKSPACE)     &trans                 &trans     &trans
+&trans     &kp F1         &kp F2         &kp F3            &kp F4             &kp F5    &kp F6         &kp F7       &kp F8                &kp F9                 &kp F10    &kp F11
+&trans     &kp GRAVE      &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &trans    &kp COLON      &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET  &trans
+&trans     &kp TILDE      &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH  &kp QUESTION   &kp EXCL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPS   &kp AT
+&trans     &kp BACKSLASH  &kp SLASH      &kp STAR          &kp SINGLE_QUOTE   &trans    &kp SEMICOLON  &kp DOLLAR   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE   &trans
+&trans     &trans         &trans         &trans            &trans                                      &trans       &trans                &trans                 &trans     &trans
+&kp LC(A)  &trans         &trans         &trans            &trans             &trans    &trans         &trans       &kp LG(BACKSPACE)     &trans                 &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
